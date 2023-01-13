@@ -12,6 +12,7 @@ Dos palabras exactamente iguales no son anagrama. """
 print("Escriba la primera palabra")
 word1 = input()
 word1 = word1.lower()
+
 word2 = input()
 word2 = word2.lower()
 #print(word1+" "+word2)
