@@ -15,4 +15,9 @@ word1 = word1.lower()
 
 word2 = input()
 word2 = word2.lower()
+
+word3 = word2[::-1]
+
+print(word1 == word3)
+    
 #print(word1+" "+word2)
