@@ -7,11 +7,25 @@
  *
  * Enunciado: Escribe un programa que se encargue de comprobar si un número es o no primo.
  * Hecho esto, imprime los números primos entre 1 y 100.
- *
- * Información adicional:
- * - Usa el canal de nuestro discord (https://mouredev.com/discord) "🔁reto-semanal" para preguntas, dudas o prestar ayuda a la acomunidad.
- * - Puedes hacer un Fork del repo y una Pull Request al repo original para que veamos tu solución aportada.
- * - Revisaré el ejercicio en directo desde Twitch el lunes siguiente al de su publicación.
- * - Subiré una posible solución al ejercicio el lunes siguiente al de su publicación.
- *
+
+ * Un número primo: tiene 2 divisores y sólo se puede dividir exactamente por sí mismo y por 1.
 """
+
+#n = int(input("Escriba el número que sea comprobar si es primo: "))
+listaPrimos = []
+
+for n in range(1,101):
+    lista = []
+    for i in range(1,n+1):
+        if n%(i) == 0:
+            lista.append(i)
+        i += 1
+
+    #print(lista)
+    if len(lista) == 2:
+        print(f"El número {n} es primo")
+        listaPrimos.append(n)
+    else:
+        print(f"El número {n} no es primo")
+
+print(listaPrimos)
