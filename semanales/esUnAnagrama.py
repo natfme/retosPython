@@ -18,6 +18,9 @@ word2 = word2.lower()
 
 word3 = word2[::-1]
 
-print(word1 == word3)
-    
-#print(word1+" "+word2)
+result = (word1 == word3)
+
+word1 = word1.title()
+word2 = word2.title()
+print(result)
+print(f"Las palabras {word1} y {word2} son anagramas")
