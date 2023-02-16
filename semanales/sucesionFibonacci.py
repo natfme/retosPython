@@ -17,7 +17,7 @@ y = int(input("Segundo número: "))
 n = int(input("¿Cuántos números quiere imprimir: "))
 lista = [x, y]
 
-for i in range(0,n+1):
+for i in range(0,n-2):
     z = x + y
     lista.append(z)
     x = y
